@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Slider from './components/slider';
+import './styles/app.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Name = () => {
+    return <div className="product-name">BIG DICK IS GOOD</div>;
+};
+
+const App = () => {
+    return (
+        <div style={{ width: '100vw' }}>
+            <Slider component={<Name />} />
+        </div>
+    );
+};
 
 export default App;
